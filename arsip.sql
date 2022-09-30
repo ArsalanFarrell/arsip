@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2022 at 06:58 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.28
+-- Generation Time: Sep 30, 2022 at 04:55 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,7 +44,7 @@ CREATE TABLE `tbl_arsip` (
 --
 
 INSERT INTO `tbl_arsip` (`id_arsip`, `id_kategori`, `no_arsip`, `nama_arsip`, `tgl_upload`, `tgl_update`, `file_arsip`, `id_jabatan`, `id_user`) VALUES
-(21, 2, '12312312', 'mencoba arsip 27-09-22', '2022-09-29', '2022-09-29', 'LaporanAkhir__AndriyAthallaAlrasheed.pdf', 2, 1);
+(23, 3, '2022/PD3/TU/001', 'Nota Dinas WFH', '2022-09-30', '2022-09-30', 'Soal_Praktek_Pemrograman_2022.pdf', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `name`, `address`, `level`, `id_jabatan`) VALUES
-(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', ' Nurachman', 'Jakarta', 1, 2);
+(1, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Arsalan Farrell Belva Wijaya', 'Malang', 1, 2);
 
 --
 -- Indexes for dumped tables
@@ -151,7 +151,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `tbl_arsip`
 --
 ALTER TABLE `tbl_arsip`
-  MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_arsip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `tbl_jabatan`
